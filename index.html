@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="es-AR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Inmobiliaria Bellezze | Alquiler y venta en General Pico</title>
+  <meta name="description" content="Casas, departamentos, salones y terrenos en alquiler y venta en General Pico, La Pampa. Hace 50 años encontrando la propiedad justa.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+
+<header class="cabecera">
+  <div class="contenedor">
+    <a class="logo" href="index.html"><img src="media/logo-bellezze.png" alt="Inmobiliaria Bellezze, inicio" width="335" height="116"></a>
+    <nav aria-label="Principal">
+      <ul class="menu">
+        <li><a href="#propiedades" aria-current="page">Propiedades</a></li>
+        <li><a href="propiedad.html">Recorridos en video</a></li>
+        <li><a href="#inmobiliaria">La inmobiliaria</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+    <a class="tel" href="tel:+542302337430">02302-337430</a>
+  </div>
+</header>
+
+<main>
+  <section class="portada">
+    <div class="contenedor">
+      <div class="portada-grilla">
+        <div>
+          <h1 class="calle entra">Encontrá tu lugar en General Pico</h1>
+          <p class="bajada entra entra-2">Casas, departamentos, salones y terrenos. Ahora podés recorrer algunas propiedades en video antes de visitarlas.</p>
+          <div class="acciones entra entra-3">
+            <a class="boton boton-principal" href="#propiedades">Ver propiedades</a>
+            <a class="boton boton-borde" href="tel:+542302337430">Llamar</a>
+          </div>
+        </div>
+
+        <div class="ventana entra entra-2">
+          <video src="media/recorrido-26-771.mp4" poster="media/recorrido-poster.jpg" autoplay muted loop playsinline aria-label="Recorrido en video del salón de calle 26 entre 15 y 17"></video>
+          <div class="rotulo">
+            <div>
+              <span class="calle">Calle 26</span>
+              <span class="entre">entre 15 y 17. Salón en alquiler</span>
+            </div>
+            <a href="propiedad.html">Ver la propiedad</a>
+          </div>
+        </div>
+      </div>
+
+      <form class="buscador" data-buscador aria-label="Buscar propiedades">
+        <label>
+          <span>Operación</span>
+          <select id="busca-op">
+            <option value="">Alquiler o venta</option>
+            <option value="alquiler">Alquiler</option>
+            <option value="venta">Venta</option>
+          </select>
+        </label>
+        <label>
+          <span>Tipo</span>
+          <select id="busca-tipo">
+            <option value="">Cualquier tipo</option>
+            <option>Casa</option>
+            <option>Departamento</option>
+            <option>Salón</option>
+            <option>Oficina</option>
+            <option>Terreno</option>
+          </select>
+        </label>
+        <label>
+          <span>Zona</span>
+          <select id="busca-zona">
+            <option>General Pico</option>
+          </select>
+        </label>
+        <button class="boton boton-oscuro" type="submit">Buscar</button>
+      </form>
+    </div>
+  </section>
+
+  <section class="seccion seccion-blanca" id="propiedades">
+    <div class="contenedor">
+      <div class="encabezado">
+        <div>
+          <h2 class="calle">Propiedades destacadas</h2>
+          <p>Las que elegimos esta semana. Tocá una para ver fotos, datos y cómo consultarla.</p>
+        </div>
+        <div class="filtro" role="group" aria-label="Filtrar por operación">
+          <button type="button" data-op="todas" aria-pressed="true">Todas</button>
+          <button type="button" data-op="alquiler" aria-pressed="false">Alquiler</button>
+          <button type="button" data-op="venta" aria-pressed="false">Venta</button>
+        </div>
+      </div>
+      <ul class="fichas" data-fichas></ul>
+    </div>
+  </section>
+
+  <section class="seccion historia" id="inmobiliaria">
+    <div class="contenedor">
+      <p class="calle anios" aria-hidden="true">50</p>
+      <div>
+        <h2>Cincuenta años abriendo puertas en Pico</h2>
+        <p>Desde la oficina de calle 17 acompañamos a familias, comercios e inversores a alquilar, comprar y vender. Conocemos cada barrio y cada cuadra.</p>
+        <p>Contanos qué buscás y te asesoramos sin vueltas: qué conviene, cuánto cuesta y qué papeles hacen falta.</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="pie" id="contacto">
+  <div class="contenedor">
+    <div>
+      <span class="barras" aria-hidden="true"></span>
+      <strong>Inmobiliaria Bellezze</strong>
+      Calle 17 n.º 1179, General Pico, La Pampa
+    </div>
+    <div>
+      <strong>Teléfono</strong>
+      <a href="tel:+542302337430">02302-337430</a><br>
+      <a href="tel:+542302422758">02302-422758</a>
+    </div>
+    <div>
+      <strong>Correo</strong>
+      <a href="mailto:inmobiliariabellezze@gmail.com">inmobiliariabellezze@gmail.com</a>
+    </div>
+    <p class="legal">Propuesta de rediseño. Las fotos de las propiedades se cargan desde el sitio actual de Bellezze.</p>
+  </div>
+</footer>
+
+<script src="js/datos.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
